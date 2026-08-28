@@ -13,19 +13,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const heroSlide = document.querySelector(".hero-slide");
   if (heroSlide) {
-    const heroSlides = [
+    const desktopSlides = [
       { src: "assets/images/a4704877.webp", alt: "Live band performance photographed by Michael Ralph Media" },
+      { src: "assets/images/a4706498.webp", alt: "Landscape photography by Michael Ralph Media" },
+      { src: "assets/images/a4705105.webp", alt: "Live event photography by Michael Ralph Media" },
+      { src: "assets/images/a4702938.webp", alt: "Urban photography by Michael Ralph Media" },
+      { src: "assets/images/a4700719.webp", alt: "Architecture photography by Michael Ralph Media" }
+    ];
+    const mobileSlides = [
+      { src: "assets/images/a4702938.webp", alt: "Urban photography by Michael Ralph Media" },
+      { src: "assets/images/a4700719.webp", alt: "Architecture photography by Michael Ralph Media" },
       { src: "assets/images/a4701210.webp", alt: "Urban photography by Michael Ralph Media" },
       { src: "assets/images/img-0140.webp", alt: "Portrait photography by Michael Ralph Media" },
-      { src: "assets/images/a4706498.webp", alt: "Landscape photography by Michael Ralph Media" },
       { src: "assets/images/3.webp", alt: "Analogue photography by Michael Ralph Media" }
     ];
+    const mobileQuery = window.matchMedia("(max-width: 767px)");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let heroSlides = mobileQuery.matches ? mobileSlides : desktopSlides;
     let heroIndex = 0;
 
-    heroSlides.forEach((slide) => {
+    [...desktopSlides, ...mobileSlides].forEach((slide) => {
       const image = new Image();
       image.src = slide.src;
+    });
+
+    function switchHeroSlides(slides) {
+      heroSlides = slides;
+      heroIndex = 0;
+      heroSlide.classList.add("is-fading");
+      window.setTimeout(() => {
+        heroSlide.src = heroSlides[heroIndex].src;
+        heroSlide.alt = heroSlides[heroIndex].alt;
+        heroSlide.classList.remove("is-fading");
+      }, 2400);
+    }
+
+    heroSlide.src = heroSlides[0].src;
+    heroSlide.alt = heroSlides[0].alt;
+    mobileQuery.addEventListener("change", (event) => {
+      switchHeroSlides(event.matches ? mobileSlides : desktopSlides);
     });
 
     if (!reducedMotion) {
@@ -36,8 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
           heroSlide.src = heroSlides[heroIndex].src;
           heroSlide.alt = heroSlides[heroIndex].alt;
           heroSlide.classList.remove("is-fading");
-        }, 1200);
-      }, 15000);
+        }, 2400);
+      }, 45000);
     }
   }
 
