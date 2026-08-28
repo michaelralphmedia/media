@@ -1783,3 +1783,39 @@ img{display:block;width:100%;height:100%;object-fit:cover}
   .services-location{padding-inline:18px}
   .site-footer{padding-inline:18px}
 }
+
+/* REFERENCE AESTHETIC PREVIEW FOR INNER PAGES */
+@media (min-width:1100px){
+  .page{width:100%;margin:0;box-shadow:none}
+  .site-header{min-height:72px;padding-inline:5.5vw}
+  .page-intro,.services-page-intro{padding-inline:5.5vw}
+  .portfolio-index{padding-inline:5.5vw}
+  .portfolio-index-item{grid-template-columns:1.1fr .9fr;min-height:430px;gap:5vw;padding:36px 0}
+  .portfolio-index-item:nth-child(even){grid-template-columns:.9fr 1.1fr}
+  .portfolio-index-image{height:380px}
+  .portfolio-index-copy h2{font-size:58px}
+  .series-intro{padding-inline:5.5vw}
+  .gallery{columns:3;padding-inline:5.5vw}
+  .about-page{grid-template-columns:1.1fr .9fr;min-height:680px}
+  .about-portrait{order:2;min-height:680px}
+  .about-copy{order:1;padding-inline:7vw}
+  .contact-page{min-height:calc(100vh - 133px)}
+  .contact-page-heading{padding-inline:7vw}
+  .services-page-intro{padding-top:70px;padding-bottom:62px}
+  .service-detail{padding-inline:7vw}
+  .services-location{padding-inline:7vw}
+}
+
+@media (max-width:767px){
+  .page:has(.compact-contact){
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+  }
+  .page:has(.compact-contact) > main{
+    display:flex;
+    flex:1;
+    flex-direction:column;
+  }
+  .page:has(.compact-contact) .compact-contact{flex:1}
+}

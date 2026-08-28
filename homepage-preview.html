@@ -662,6 +662,72 @@ img{display:block;width:100%;height:100%;object-fit:cover}
   .hero-image{height:560px;margin:20px 0 0 18px}
   .portfolio-card:nth-child(n){grid-column:span 6;min-height:390px;margin-top:0}
   .portfolio-card:last-child{grid-column:span 12}
+
+/* REFERENCE LAYOUT PREVIEW: composition only, existing palette retained */
+@media (min-width:1100px){
+  body{background:var(--outer)}
+  .page{width:100%;margin:0;box-shadow:none}
+  .site-header{min-height:72px;padding-inline:5.5vw}
+  .hero{
+    min-height:590px;
+    display:block;
+    padding:0;
+    overflow:hidden;
+  }
+  .hero-copy{
+    position:absolute;
+    left:7vw;
+    top:50%;
+    transform:translateY(-50%);
+    max-width:470px;
+  }
+  .hero h1{font-size:clamp(92px,10vw,142px)}
+  .hero-image{
+    position:absolute;
+    inset:0 0 0 43%;
+    width:auto;
+    height:auto;
+    margin:0;
+  }
+  .hero-image::before{left:-22px;top:22px}
+  .hero-image::after{bottom:24px}
+  .hero-copy{z-index:3}
+  .portfolio-overview{padding:48px 5.5vw 54px}
+  .section-heading{margin-bottom:24px}
+  .portfolio-grid{grid-template-columns:repeat(5,1fr);gap:12px}
+  .portfolio-card:nth-child(n){grid-column:auto;min-height:230px;margin:0}
+  .portfolio-card-copy{left:15px;right:15px;bottom:15px}
+  .portfolio-card-copy strong{font-size:28px}
+  .home-about{grid-template-columns:1.1fr .9fr;min-height:420px}
+  .home-about-image{order:2;height:auto;margin:0}
+  .home-about-copy{order:1;padding:56px 7vw}
+  .home-about-copy h2{font-size:58px}
+  .services-strip{padding:52px 5.5vw 48px}
+  .services-heading{grid-template-columns:1fr 1fr}
+  .services-list{grid-template-columns:repeat(4,1fr)}
+  .services-list a{min-height:170px;padding:22px 20px}
+  .home-contact{padding:48px 5.5vw 54px;text-align:left}
+  .home-contact h2{font-size:62px}
+}
+
+@media (max-width:1099px){
+  .page{width:100%;margin:0;box-shadow:none}
+}
+
+@media (max-width:767px){
+  .site-header{min-height:72px;padding-inline:18px}
+  .hero{padding:38px 18px 42px}
+  .hero-copy{position:relative;top:auto;transform:none;max-width:none}
+  .hero-image{position:relative;inset:auto;width:calc(100% - 8px);height:min(84vw,360px);margin:27px 0 0 8px}
+  .portfolio-overview{padding:44px 18px 38px}
+  .portfolio-grid{grid-template-columns:1fr;gap:12px}
+  .portfolio-card:nth-child(n){grid-column:auto;min-height:min(96vw,360px);margin:0}
+  .home-about{grid-template-columns:1fr}
+  .home-about-image{order:1;width:calc(100% - 36px);height:min(92vw,360px);margin:22px 18px 0}
+  .home-about-copy{order:2;padding:38px 18px 46px}
+  .services-strip{padding-inline:18px}
+  .home-contact{padding-inline:18px}
+}
   .home-about{grid-template-columns:1fr 1fr}
   .home-about-copy{padding:55px 40px}
   .series-intro{grid-template-columns:48px 1fr}
@@ -996,6 +1062,54 @@ img{display:block;width:100%;height:100%;object-fit:cover}
   .home-about-copy{
     padding:42px 26px 50px;
   }
+}
+
+/* REFERENCE LAYOUT PREVIEW: composition only, existing palette retained */
+@media (min-width:1100px){
+  body{background:var(--outer)}
+  .page{width:100%;margin:0;box-shadow:none}
+  .site-header{min-height:72px;padding-inline:5.5vw}
+  .hero{min-height:590px;display:block;padding:0;overflow:hidden}
+  .hero-copy{position:absolute;left:7vw;top:50%;transform:translateY(-50%);max-width:470px;z-index:3}
+  .hero h1{font-size:clamp(92px,10vw,142px)}
+  .hero-image{position:absolute;inset:0 0 0 43%;width:auto;height:auto;margin:0}
+  .hero-image::before{left:-22px;top:22px}
+  .hero-image::after{bottom:24px}
+  .portfolio-overview{padding:48px 5.5vw 54px}
+  .section-heading{margin-bottom:24px}
+  .portfolio-grid{grid-template-columns:repeat(5,1fr);gap:12px}
+  .portfolio-card:nth-child(n){grid-column:auto;min-height:230px;margin:0}
+  .portfolio-card-copy{left:15px;right:15px;bottom:15px}
+  .portfolio-card-copy strong{font-size:28px}
+  .home-about{grid-template-columns:1.1fr .9fr;min-height:420px}
+  .home-about-image{order:2;height:auto;margin:0}
+  .home-about-copy{order:1;padding:56px 7vw}
+  .home-about-copy h2{font-size:58px}
+  .services-strip{padding:52px 5.5vw 48px}
+  .services-heading{grid-template-columns:1fr 1fr}
+  .services-list{grid-template-columns:repeat(4,1fr)}
+  .services-list a{min-height:170px;padding:22px 20px}
+  .home-contact{padding:48px 5.5vw 54px;text-align:left}
+  .home-contact h2{font-size:62px}
+}
+
+@media (max-width:1099px){
+  .page{width:100%;margin:0;box-shadow:none}
+}
+
+@media (max-width:767px){
+  .site-header{min-height:72px;padding-inline:18px}
+  .hero{padding:38px 18px 42px}
+  .hero-copy{position:relative;top:auto;transform:none;max-width:none}
+  .hero-image{position:relative;inset:auto;width:calc(100% - 8px);height:min(84vw,360px);margin:27px 0 0 8px}
+  .portfolio-overview{padding:44px 18px 38px}
+  .portfolio-grid{grid-template-columns:1fr;gap:12px}
+  .portfolio-card:nth-child(n){grid-column:auto;min-height:min(96vw,360px);margin:0}
+  .home-about{grid-template-columns:1fr}
+  .home-about-image{order:1;width:calc(100% - 36px);height:min(92vw,360px);margin:22px 18px 0}
+  .home-about-copy{order:2;padding:38px 18px 46px}
+  .services-strip{padding-inline:18px}
+  .home-contact{padding-inline:18px}
 }
 
 </style>
