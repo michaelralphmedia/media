@@ -1,3 +1,4 @@
+/* Michael Ralph Media v9 — compact responsive editorial */
 
 :root{
   --paper:#f5f1e9;
@@ -1080,4 +1081,643 @@ img{display:block;width:100%;height:100%;object-fit:cover}
   .service-detail-copy h2{font-size:46px}
   .services-location{padding:50px 26px 54px}
   .services-location h2{font-size:54px}
+}
+
+
+/* ================================================================
+   MICHAEL RALPH MEDIA V9 — COMPACT RESPONSIVE EDITORIAL SYSTEM
+   Desktop: 1100px+
+   Tablet:  768px–1099px
+   Phone:   <=767px
+   ================================================================ */
+
+/* ---------- GLOBAL / DESKTOP ---------- */
+.page{
+  width:min(1220px,calc(100vw - 24px));
+  margin:12px auto;
+}
+.eyebrow{font-size:8px;margin-bottom:11px}
+.text-link{margin-top:19px;font-size:8px}
+.outline-button{padding:12px 19px;font-size:8px}
+
+/* Header */
+.site-header{
+  min-height:74px;
+  padding:0 38px;
+  gap:22px;
+}
+.brand-lockup{gap:10px}
+.brand-mark{
+  width:36px;
+  height:36px;
+  flex-basis:36px;
+}
+.brand-name{font-size:24px}
+.brand-name small{margin-top:6px;font-size:6px}
+.site-header nav{gap:27px}
+.site-header nav>a,.drop-toggle{font-size:9px;padding:10px 0}
+
+/* Home hero */
+.hero{
+  min-height:468px;
+  grid-template-columns:.92fr 1.08fr;
+  gap:28px;
+  padding:30px 40px 36px;
+}
+.section-number{margin-bottom:13px;font-size:12px}
+.hero h1{
+  font-size:clamp(86px,8.8vw,116px);
+  line-height:.73;
+}
+.media-line{gap:13px;margin-top:20px}
+.media-line::before{width:56px}
+.media-line span{font-size:9px}
+.role{margin-top:19px;font-size:9px}
+.tagline{margin-top:13px;font-size:22px}
+.hero-image{
+  height:395px;
+  margin-left:8px;
+}
+.hero-image::before{left:-14px;top:16px}
+.hero-image::after{bottom:-23px;font-size:7px}
+
+/* Home portfolio */
+.portfolio-overview{
+  padding:44px 38px 40px;
+}
+.section-heading{
+  gap:32px;
+  margin-bottom:26px;
+}
+.section-heading h2{font-size:50px}
+.section-heading p{
+  width:min(410px,45%);
+  font-size:10.5px;
+}
+.portfolio-grid{gap:14px}
+.portfolio-card:nth-child(1){min-height:390px}
+.portfolio-card:nth-child(2){min-height:340px;margin-top:45px}
+.portfolio-card:nth-child(3){min-height:365px;margin-top:18px}
+.portfolio-card:nth-child(4){min-height:340px}
+.portfolio-card:nth-child(5){min-height:340px;margin-top:28px}
+.portfolio-card-copy{left:17px;right:17px;bottom:17px}
+.portfolio-card-copy strong{font-size:30px}
+
+/* Home about */
+.home-about{
+  grid-template-columns:.55fr 1.45fr;
+  min-height:390px;
+  align-items:center;
+}
+.home-about-image{
+  height:335px;
+  margin:26px 0 26px 36px;
+}
+.home-about-copy{padding:44px 54px}
+.home-about-copy h2{font-size:58px}
+.home-about-copy p{
+  margin-top:16px;
+  font-size:12.5px;
+  line-height:1.75;
+}
+
+/* Home services */
+.services-strip{padding:46px 38px 42px}
+.services-heading{gap:25px;margin-bottom:22px}
+.services-heading h2{font-size:48px}
+.services-heading p{font-size:11px}
+.services-list a{
+  min-height:132px;
+  padding:20px 22px;
+}
+.services-list span{margin-bottom:10px;font-size:10px}
+.services-list strong{font-size:25px}
+.services-list p{font-size:10.5px}
+
+/* Home contact */
+.home-contact{padding:50px 40px 55px}
+.home-contact h2{font-size:58px}
+.home-contact p{font-size:11px}
+
+/* General page headings */
+.page-intro{padding:56px 48px 46px}
+.page-intro h1{font-size:clamp(74px,9vw,112px)}
+.page-intro p{margin-top:20px;font-size:12.5px;line-height:1.7}
+
+/* Portfolio index */
+.portfolio-index{padding:0 38px 42px}
+.portfolio-index-item{
+  min-height:390px;
+  padding:32px 0;
+  gap:42px;
+}
+.portfolio-index-image{height:340px}
+.portfolio-index-copy h2{font-size:52px;margin:10px 0 14px}
+.portfolio-index-copy p{font-size:12px;line-height:1.7}
+.portfolio-index-copy strong{margin-top:20px;font-size:8px}
+
+/* Portfolio series */
+.series-intro{
+  grid-template-columns:58px 1.15fr .85fr;
+  gap:24px;
+  padding:50px 44px 40px;
+}
+.series-number{padding-top:13px;font-size:13px}
+.series-intro h1{font-size:clamp(70px,8vw,102px)}
+.series-intro p{font-size:11.5px;line-height:1.7}
+.gallery{
+  column-gap:14px;
+  padding:32px 34px 38px;
+}
+.gallery-item{margin-bottom:14px}
+.series-nav{padding:22px 38px 27px;font-size:8px}
+
+/* About page */
+.about-page{
+  grid-template-columns:.82fr 1.18fr;
+  min-height:620px;
+}
+.about-portrait{min-height:620px}
+.about-copy{padding:54px 52px}
+.about-copy h1{font-size:clamp(60px,6.5vw,82px)}
+.about-copy p{font-size:12px;line-height:1.75}
+.about-copy p.lead{
+  margin-top:22px;
+  font-size:13.5px;
+  line-height:1.75;
+}
+.skills{margin-top:22px}
+.skills span{font-size:7px;padding:7px 9px}
+
+/* Contact */
+.compact-contact{
+  min-height:470px;
+  grid-template-columns:.85fr 1.15fr;
+}
+.compact-contact .contact-page-heading{padding:48px 48px}
+.compact-contact .contact-page-heading h1{
+  font-size:clamp(58px,6vw,78px);
+}
+.compact-contact .contact-page-heading p{
+  margin-top:16px;
+  font-size:11px;
+}
+.compact-services-link{margin-top:18px}
+.compact-contact .contact-list a{
+  min-height:72px;
+  padding:14px 24px;
+  grid-template-columns:84px 1fr 22px;
+}
+
+/* Dedicated services page */
+.services-page-intro{padding:54px 48px 46px}
+.services-page-intro h1{
+  font-size:clamp(72px,8vw,104px);
+  line-height:.78;
+}
+.services-page-intro p{
+  margin-top:22px;
+  font-size:12.5px;
+  line-height:1.75;
+}
+.service-detail{
+  grid-template-columns:76px 1fr;
+  gap:20px;
+  padding:40px 48px;
+}
+.service-detail-number{font-size:12px}
+.service-detail-copy h2{font-size:46px;margin-bottom:13px}
+.service-detail-copy p{font-size:12px;line-height:1.7}
+.service-links{margin-top:18px}
+.services-location{padding:50px 48px 54px}
+.services-location h2{font-size:56px}
+.services-location p{font-size:11px}
+
+/* Footer */
+.site-footer{padding:17px 36px 19px;font-size:7px}
+.footer-mark{width:24px;height:24px}
+
+/* ---------- TABLET: 768px–1099px ---------- */
+@media (min-width:768px) and (max-width:1099px){
+  .page{
+    width:calc(100vw - 18px);
+    margin:9px auto;
+  }
+
+  .site-header{
+    min-height:70px;
+    padding:0 28px;
+  }
+  .brand-mark{
+    width:34px;
+    height:34px;
+    flex-basis:34px;
+  }
+  .brand-name{font-size:22px}
+  .site-header nav{gap:16px}
+  .site-header nav>a,.drop-toggle{
+    font-size:8px;
+    letter-spacing:.12em;
+  }
+
+  .hero{
+    min-height:420px;
+    grid-template-columns:.9fr 1.1fr;
+    gap:22px;
+    padding:28px 30px 34px;
+  }
+  .hero h1{
+    font-size:clamp(68px,8.4vw,88px);
+    line-height:.75;
+  }
+  .media-line{margin-top:16px}
+  .media-line span{font-size:8px;letter-spacing:.4em}
+  .role{margin-top:16px;font-size:8px}
+  .tagline{font-size:19px;margin-top:10px}
+  .hero-image{
+    height:330px;
+    margin-left:6px;
+  }
+
+  .portfolio-overview{padding:38px 28px 36px}
+  .section-heading h2{font-size:44px}
+  .section-heading p{font-size:10px}
+  .portfolio-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:13px;
+  }
+  .portfolio-card:nth-child(n){
+    grid-column:auto;
+    min-height:320px;
+    margin-top:0;
+  }
+  .portfolio-card:last-child{grid-column:1 / -1;min-height:340px}
+
+  .home-about{
+    grid-template-columns:.64fr 1.36fr;
+    min-height:350px;
+  }
+  .home-about-image{
+    height:300px;
+    margin:24px 0 24px 28px;
+  }
+  .home-about-copy{padding:36px 38px}
+  .home-about-copy h2{font-size:50px}
+  .home-about-copy p{font-size:11.5px}
+
+  .services-strip{padding:40px 28px 38px}
+  .services-heading h2{font-size:44px}
+  .services-list a{min-height:122px;padding:18px 19px}
+  .services-list strong{font-size:23px}
+
+  .home-contact{padding:44px 30px 48px}
+  .home-contact h2{font-size:52px}
+
+  .page-intro{padding:48px 34px 39px}
+  .page-intro h1{font-size:78px}
+  .page-intro p{font-size:12px}
+
+  .portfolio-index{padding:0 30px 34px}
+  .portfolio-index-item,
+  .portfolio-index-item:nth-child(even){
+    min-height:335px;
+    gap:30px;
+    padding:28px 0;
+  }
+  .portfolio-index-image{height:300px}
+  .portfolio-index-copy h2{font-size:46px}
+  .portfolio-index-copy p{font-size:11.5px}
+
+  .series-intro{
+    grid-template-columns:48px 1fr;
+    gap:16px 22px;
+    padding:42px 32px 34px;
+  }
+  .series-intro h1{font-size:76px}
+  .series-intro p{
+    grid-column:2;
+    max-width:620px;
+    font-size:11px;
+  }
+  .gallery{
+    columns:2;
+    padding:28px 26px 34px;
+    column-gap:12px;
+  }
+  .gallery-item{margin-bottom:12px}
+
+  .about-page{
+    grid-template-columns:.8fr 1.2fr;
+    min-height:540px;
+  }
+  .about-portrait{min-height:540px}
+  .about-copy{padding:44px 38px}
+  .about-copy h1{font-size:64px}
+  .about-copy p.lead{font-size:13px}
+
+  .compact-contact{
+    min-height:430px;
+    grid-template-columns:.88fr 1.12fr;
+  }
+  .compact-contact .contact-page-heading{padding:42px 34px}
+  .compact-contact .contact-page-heading h1{font-size:60px}
+  .compact-contact .contact-list a{
+    min-height:68px;
+    padding:13px 19px;
+    grid-template-columns:70px 1fr 20px;
+  }
+
+  .services-page-intro{padding:46px 34px 40px}
+  .services-page-intro h1{font-size:80px}
+  .service-detail{
+    grid-template-columns:58px 1fr;
+    padding:34px 34px;
+  }
+  .service-detail-copy h2{font-size:42px}
+  .services-location{padding:44px 34px 48px}
+  .services-location h2{font-size:50px}
+
+  .site-footer{padding:16px 28px 18px}
+}
+
+/* ---------- PHONE: <=767px ---------- */
+@media (max-width:767px){
+  .page{width:100%;margin:0;box-shadow:none}
+
+  .site-header{
+    min-height:66px;
+    padding:0 20px;
+  }
+  .brand-mark{
+    width:32px;
+    height:32px;
+    flex-basis:32px;
+  }
+  .brand-name{font-size:21px}
+  .brand-name small{font-size:5.5px;margin-top:5px}
+  .menu-toggle{display:block}
+
+  .site-header nav{
+    position:absolute;
+    left:0;right:0;top:100%;
+    display:none;
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+    padding:8px 20px 17px;
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+    box-shadow:0 12px 22px rgba(0,0,0,.07);
+  }
+  .site-header nav.open{display:flex}
+  .site-header nav>a,.drop-toggle{
+    width:100%;
+    text-align:left;
+    padding:11px 0;
+    font-size:8px;
+  }
+  .drop-menu{
+    position:static;
+    display:none;
+    min-width:0;
+    border:0;
+    box-shadow:none;
+    padding:0 0 5px 12px;
+    opacity:1;
+    visibility:visible;
+    transform:none;
+  }
+  .dropdown:hover .drop-menu,
+  .dropdown:focus-within .drop-menu{display:none}
+  .dropdown.open .drop-menu{display:block}
+
+  .hero{
+    min-height:0;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:0;
+    padding:31px 20px 38px;
+  }
+  .section-number{font-size:10px;margin-bottom:11px}
+  .hero h1{
+    font-size:clamp(62px,18vw,68px);
+    line-height:.76;
+  }
+  .media-line{margin-top:15px;gap:10px}
+  .media-line::before{width:42px;height:1px}
+  .media-line span{font-size:7px;letter-spacing:.38em}
+  .role{margin-top:15px;font-size:7.5px;line-height:1.5}
+  .tagline{font-size:18px;margin-top:9px}
+  .hero .text-link{margin-top:15px}
+  .hero-image{
+    width:calc(100% - 10px);
+    height:315px;
+    margin:27px 0 0 10px;
+  }
+  .hero-image::before{left:-10px;top:11px}
+  .hero-image::after{
+    right:0;
+    bottom:-19px;
+    padding:6px 0 6px 10px;
+    font-size:6px;
+  }
+
+  .portfolio-overview{padding:38px 20px 34px}
+  .section-heading{display:block;margin-bottom:22px}
+  .section-heading h2{font-size:42px}
+  .section-heading p{
+    width:auto;
+    margin-top:12px;
+    font-size:10px;
+    line-height:1.6;
+  }
+  .portfolio-grid{
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+  .portfolio-card:nth-child(n){
+    grid-column:auto;
+    min-height:342px;
+    margin:0;
+  }
+  .portfolio-card-copy strong{font-size:27px}
+
+  .home-about{
+    grid-template-columns:1fr;
+    min-height:0;
+  }
+  .home-about-image{
+    width:calc(100% - 40px);
+    height:335px;
+    margin:22px 20px 0;
+  }
+  .home-about-copy{padding:34px 22px 40px}
+  .home-about-copy h2{font-size:47px}
+  .home-about-copy p{
+    margin-top:13px;
+    font-size:11.5px;
+    line-height:1.65;
+  }
+
+  .services-strip{padding:38px 20px 36px}
+  .services-heading{
+    grid-template-columns:1fr;
+    gap:10px;
+    margin-bottom:18px;
+  }
+  .services-heading .eyebrow{grid-column:auto;margin-bottom:0}
+  .services-heading h2{font-size:42px}
+  .services-heading p{font-size:10.5px;line-height:1.6}
+  .services-list{grid-template-columns:1fr}
+  .services-list a{
+    min-height:112px;
+    padding:17px 18px;
+  }
+  .services-list span{margin-bottom:8px;font-size:9px}
+  .services-list strong{font-size:23px}
+  .services-list p{font-size:10px;line-height:1.55}
+
+  .home-contact{padding:40px 22px 44px}
+  .home-contact h2{font-size:46px}
+  .home-contact p{font-size:10.5px;line-height:1.6}
+
+  .page-intro{padding:42px 22px 34px}
+  .page-intro h1{
+    font-size:clamp(56px,17vw,66px);
+    line-height:.8;
+  }
+  .page-intro p{margin-top:15px;font-size:11.5px;line-height:1.65}
+
+  .portfolio-index{padding:0 20px 28px}
+  .portfolio-index-item,
+  .portfolio-index-item:nth-child(even){
+    grid-template-columns:1fr;
+    min-height:0;
+    gap:18px;
+    padding:24px 0;
+  }
+  .portfolio-index-item:nth-child(even) .portfolio-index-image{order:0}
+  .portfolio-index-image{height:300px}
+  .portfolio-index-copy h2{font-size:43px;margin:9px 0 12px}
+  .portfolio-index-copy p{font-size:11px;line-height:1.65}
+
+  .series-intro{
+    grid-template-columns:1fr;
+    gap:10px;
+    padding:37px 22px 30px;
+  }
+  .series-number{padding:0;font-size:11px}
+  .series-intro h1{
+    font-size:clamp(58px,17vw,68px);
+    line-height:.8;
+  }
+  .series-intro p{
+    grid-column:auto;
+    margin-top:6px;
+    font-size:11px;
+    line-height:1.65;
+  }
+  .gallery{
+    columns:1;
+    padding:18px 14px 24px;
+  }
+  .gallery-item{margin-bottom:10px}
+  .series-nav{
+    padding:19px 18px 23px;
+    font-size:7px;
+  }
+
+  .about-page{grid-template-columns:1fr;min-height:0}
+  .about-portrait{
+    min-height:0;
+    height:66vh;
+    max-height:540px;
+  }
+  .about-copy{padding:38px 22px 48px}
+  .about-copy h1{
+    font-size:clamp(52px,16vw,62px);
+    line-height:.82;
+  }
+  .about-copy p{font-size:11.5px;line-height:1.65}
+  .about-copy p.lead{
+    margin-top:19px;
+    font-size:12.5px;
+    line-height:1.7;
+  }
+  .skills{margin-top:19px}
+  .skills span{padding:6px 8px;font-size:6.5px}
+
+  .compact-contact{
+    grid-template-columns:1fr;
+    min-height:0;
+  }
+  .compact-contact .contact-page-heading{padding:39px 22px 34px}
+  .compact-contact .contact-page-heading h1{
+    max-width:none;
+    font-size:54px;
+    line-height:.86;
+  }
+  .compact-contact .contact-page-heading p{
+    margin-top:14px;
+    font-size:11px;
+    line-height:1.65;
+  }
+  .compact-services-link{margin-top:16px}
+  .contact-list{border-left:0}
+  .compact-contact .contact-list a{
+    min-height:64px;
+    padding:12px 20px;
+    grid-template-columns:64px 1fr 18px;
+  }
+  .compact-contact .contact-list strong{font-size:11px}
+  .compact-contact .contact-list span{font-size:6.5px}
+
+  .services-page-intro{padding:40px 22px 34px}
+  .services-page-intro h1{
+    font-size:clamp(58px,17vw,66px);
+    line-height:.8;
+  }
+  .services-page-intro p{
+    margin-top:16px;
+    font-size:11.5px;
+    line-height:1.65;
+  }
+  .service-detail{
+    grid-template-columns:1fr;
+    gap:8px;
+    padding:30px 22px;
+  }
+  .service-detail-number{padding:0;font-size:10px}
+  .service-detail-copy h2{font-size:38px;margin-bottom:11px}
+  .service-detail-copy p{font-size:11px;line-height:1.65}
+  .service-links{gap:18px;margin-top:15px}
+  .service-links a{font-size:7px}
+  .services-location{padding:38px 22px 42px}
+  .services-location h2{font-size:45px}
+  .services-location p{font-size:10.5px;line-height:1.65}
+
+  .site-footer{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:13px;
+    padding:16px 20px 18px;
+  }
+  .site-footer div{gap:17px;flex-wrap:wrap}
+  .footer-mark{width:22px;height:22px}
+
+  .lightbox{padding:48px 34px}
+  .lightbox figure{max-width:calc(100vw - 52px)}
+  .lightbox figure img{max-height:calc(100vh - 110px)}
+  .lightbox-prev{left:5px}
+  .lightbox-next{right:5px}
+  .lightbox-close{right:11px;top:12px}
+}
+
+/* Small phones */
+@media (max-width:430px){
+  .hero h1{font-size:61px}
+  .hero-image{height:300px}
+  .portfolio-card:nth-child(n){min-height:326px}
+  .home-about-image{height:320px}
+  .home-about-copy h2{font-size:44px}
 }
