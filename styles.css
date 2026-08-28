@@ -1827,9 +1827,9 @@ img{display:block;width:100%;height:100%;object-fit:cover}
   .page:has(.hero) .hero{min-height:590px;display:block;padding:0;overflow:hidden}
   .page:has(.hero) .hero-copy{position:absolute;left:7vw;top:50%;transform:translateY(-50%);max-width:470px;z-index:3}
   .page:has(.hero) .hero h1{font-size:clamp(92px,10vw,142px)}
-  .page:has(.hero) .hero-image{position:absolute;inset:0 0 0 43%;width:auto;height:auto;margin:0}
+  .page:has(.hero) .hero-image{position:absolute;top:0;right:18px;bottom:0;left:43%;width:calc(57% - 18px);max-width:none;height:auto;margin:0}
   .page:has(.hero) .hero-image::before{left:-22px;top:22px}
-  .page:has(.hero) .hero-image::after{bottom:24px}
+  .page:has(.hero) .hero-image::after{right:18px;bottom:24px}
   .page:has(.hero) .portfolio-overview{padding:48px 5.5vw 54px}
   .page:has(.hero) .section-heading{margin-bottom:24px}
   .page:has(.hero) .portfolio-grid{grid-template-columns:repeat(5,1fr);gap:12px}
