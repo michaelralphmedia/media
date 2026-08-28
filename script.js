@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
           heroSlide.src = heroSlides[heroIndex].src;
           heroSlide.alt = heroSlides[heroIndex].alt;
           heroSlide.classList.remove("is-fading");
-        }, 650);
-      }, 4500);
+        }, 1200);
+      }, 15000);
     }
   }
 
