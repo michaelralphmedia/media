@@ -1,0 +1,22 @@
+MICHAEL RALPH MEDIA — REVIEWED WEBSITE
+
+QUICK PREVIEW
+Open homepage-preview.html to check the homepage design. Its CSS, JavaScript
+and homepage images are embedded in that one file.
+
+FULL WEBSITE
+1. Extract this ZIP completely.
+2. Keep all files and the assets folder together.
+3. Open index.html from the extracted folder.
+4. When uploading to a web host, upload the complete contents of this folder.
+
+The original homepage hero image from the prior version has been restored.
+Portfolio pages:
+- portfolio.html
+- music.html
+- urban.html
+- portraits.html
+- landscape.html
+- analogue.html
+- about.html
+- contact.html

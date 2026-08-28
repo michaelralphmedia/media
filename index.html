@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Michael Ralph Media — photographer, videographer and content creator based in Guildford, Surrey.">
-  <title>Michael Ralph Media</title>
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <title>Home | Michael Ralph Media</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
@@ -13,29 +14,30 @@
 <body>
 <div class="page">
 
-<header>
-  <a class="logo" href="#home">
-    Michael Ralph
-    <small>Media</small>
+<header class="site-header">
+  <a class="logo brand-lockup" href="index.html" aria-label="Michael Ralph Media home">
+    <img class="brand-mark" src="assets/brand/mrm-logo.webp" alt="" aria-hidden="true">
+    <span class="brand-name">Michael Ralph<small>Media</small></span>
   </a>
 
-  <nav>
-    <a class="active" href="#home">Home</a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
 
-    <div class="dropdown">
-      <button class="drop-toggle" type="button">Recent Work</button>
-      <div class="drop-menu">
-        <a href="#portraits">Portraits</a>
-        <a href="#landscape">Landscape</a>
-        <a href="#architecture">Architecture</a>
-        <a href="#motion">Motion</a>
-        <a href="#music">Music</a>
+  <nav id="site-nav" aria-label="Primary navigation">
+    <a class="active" href="index.html">Home</a>
+    
+      <div class="dropdown">
+        <button class="drop-toggle" type="button">Portfolio</button>
+        <div class="drop-menu">
+          <a href="portfolio.html">All Portfolio</a>
+          <a href="music.html">Music</a>
+          <a href="urban.html">Urban</a>
+          <a href="portraits.html">Portraits / Editorial</a>
+          <a href="landscape.html">Landscape</a>
+          <a href="analogue.html">Analogue</a>
+        </div>
       </div>
-    </div>
-
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
     <div class="dropdown">
       <button class="drop-toggle" type="button">Social Media</button>
       <div class="drop-menu">
@@ -47,98 +49,157 @@
 </header>
 
 <main>
-  <section class="hero" id="home">
-    <div class="hero-copy">
-      <h1>Michael<br>Ralph</h1>
-      <div class="media"><span>MEDIA</span></div>
-      <div class="role">Photographer · Videographer · Content Creator</div>
-      <div class="hero-rule"></div>
-      <div class="tagline">Music. People. Places. Motion.</div>
-      <div class="down">↓</div>
-    </div>
 
-    <div class="hero-image">
-      <img src="assets/hero.jpg" alt="Live music photography">
-    </div>
-  </section>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <span class="section-number">01</span>
+    <h1>Michael<br>Ralph</h1>
+    <div class="media-line"><span>Media</span></div>
+    <p class="role">Photographer · Videographer · Content Creator</p>
+    <p class="tagline">Music. People. Places. Motion.</p>
+    <a class="text-link" href="portfolio.html">Explore portfolio <span>→</span></a>
+  </div>
+  <div class="hero-image">
+    <img src="assets/images/hero-original.webp" alt="Live music photography" fetchpriority="high">
+  </div>
+</section>
 
-  <section class="recent" id="recent">
-    <div class="recent-head">
-      <h2>Recent Work</h2>
-      <div class="rule"></div>
-      <p>A selection of recent projects across music, portraiture, landscapes, architecture and motion.</p>
-    </div>
-
-    <div class="work-grid">
-      <a class="work-card" id="portraits" href="#">
-        <img src="assets/portrait.jpg" alt="Portraits">
-        <div class="work-label"><strong>Portraits</strong><span aria-hidden="true"></span></div>
-      </a>
-
-      <a class="work-card" id="landscape" href="#">
-        <img src="assets/landscape.jpg" alt="Landscape">
-        <div class="work-label"><strong>Landscape</strong><span aria-hidden="true"></span></div>
-      </a>
-
-      <a class="work-card" id="architecture" href="#">
-        <img src="assets/architecture.jpg" alt="Architecture">
-        <div class="work-label"><strong>Architecture</strong><span aria-hidden="true"></span></div>
-      </a>
-
-      <a class="work-card" id="motion" href="#">
-        <img src="assets/motion.jpg" alt="Motion">
-        <div class="work-label"><strong>Motion</strong><span aria-hidden="true"></span></div>
-      </a>
-
-      <a class="work-card" id="music" href="#">
-        <img src="assets/music.jpg" alt="Music">
-        <div class="work-label"><strong>Music</strong><span aria-hidden="true"></span></div>
-      </a>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <h2>About</h2>
+<section class="portfolio-overview" id="portfolio">
+  <div class="section-heading">
     <div>
-      <p>Michael Ralph is a photographer, videographer and content creator based in Guildford, Surrey, working across live music, portraiture, landscape, architecture and motion.</p>
-      <p>His creative toolkit includes Adobe Lightroom, Photoshop and InDesign, together with DaVinci Resolve Studio for video editing and short-form content.</p>
+      <span class="eyebrow">Selected work</span>
+      <h2>Portfolio</h2>
     </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="contact-kicker">Guildford, Surrey · UK</div>
-    <h2>Let's work together</h2>
-    <p>Available for commissions, collaborations, live music, photography, videography and creative content projects.</p>
-
-    <div class="contact-grid">
-      <a class="contact-item" href="mailto:michaelralphmedia@gmail.com">
-        <span>Email</span>
-        <strong>michaelralphmedia@gmail.com</strong>
+    <p>Five bodies of work spanning live music, urban observation, portraiture, landscape and analogue photography.</p>
+  </div>
+  <div class="portfolio-grid">
+    
+      <a class="portfolio-card portfolio-card-music" href="music.html">
+        <img src="assets/images/a4704877.webp" alt="Music photography" loading="lazy">
+        <div class="portfolio-card-copy">
+          <span>01</span>
+          <strong>Music</strong>
+          <i aria-hidden="true"></i>
+        </div>
       </a>
 
-      <a class="contact-item" href="tel:+447555955234">
-        <span>Phone</span>
-        <strong>07555 955234</strong>
+      <a class="portfolio-card portfolio-card-urban" href="urban.html">
+        <img src="assets/images/a4701210.webp" alt="Urban photography" loading="lazy">
+        <div class="portfolio-card-copy">
+          <span>02</span>
+          <strong>Urban</strong>
+          <i aria-hidden="true"></i>
+        </div>
       </a>
 
-      <a class="contact-item" href="https://www.instagram.com/michaelralphmedia" target="_blank" rel="noopener">
-        <span>Instagram</span>
-        <strong>@michaelralphmedia</strong>
+      <a class="portfolio-card portfolio-card-portraits" href="portraits.html">
+        <img src="assets/images/img-0140.webp" alt="Portraits / Editorial photography" loading="lazy">
+        <div class="portfolio-card-copy">
+          <span>03</span>
+          <strong>Portraits</strong>
+          <i aria-hidden="true"></i>
+        </div>
       </a>
 
-      <a class="contact-item" href="https://www.linkedin.com/in/michael-r-9a0094326/" target="_blank" rel="noopener">
-        <span>LinkedIn</span>
-        <strong>Michael Ralph</strong>
+      <a class="portfolio-card portfolio-card-landscape" href="landscape.html">
+        <img src="assets/images/a4706498.webp" alt="Landscape photography" loading="lazy">
+        <div class="portfolio-card-copy">
+          <span>04</span>
+          <strong>Landscape</strong>
+          <i aria-hidden="true"></i>
+        </div>
       </a>
-    </div>
-  </section>
+
+      <a class="portfolio-card portfolio-card-analogue" href="analogue.html">
+        <img src="assets/images/3.webp" alt="Analogue photography" loading="lazy">
+        <div class="portfolio-card-copy">
+          <span>05</span>
+          <strong>Analogue</strong>
+          <i aria-hidden="true"></i>
+        </div>
+      </a>
+  </div>
+</section>
+
+<section class="home-about">
+  <div class="home-about-image">
+    <img src="assets/images/about-me.webp" alt="Michael Ralph" loading="lazy">
+  </div>
+  <div class="home-about-copy">
+    <span class="eyebrow">About</span>
+    <h2>Behind the camera.</h2>
+    <p>Michael Ralph is a photographer, videographer and content creator based in Guildford, Surrey. His work spans live music, portraiture, urban photography, landscape and analogue photography, with a particular interest in atmosphere, movement and visual storytelling.</p>
+    <a class="text-link" href="about.html">About Michael <span>→</span></a>
+  </div>
+</section>
+
+
+<section class="services-strip" id="services">
+  <div class="services-heading">
+    <span class="eyebrow">Work with Michael</span>
+    <h2>Creative services</h2>
+    <p>Photography, video and content for artists, venues, brands and independent creators.</p>
+  </div>
+
+  <div class="services-list">
+    <a href="contact.html">
+      <span>01</span>
+      <strong>Live Music</strong>
+      <p>Gig, venue and event photography with edited images ready for social, press and promotion.</p>
+    </a>
+
+    <a href="contact.html">
+      <span>02</span>
+      <strong>Artist Content</strong>
+      <p>Portraits, promotional imagery and short-form video built around an artist or band.</p>
+    </a>
+
+    <a href="contact.html">
+      <span>03</span>
+      <strong>Portrait / Editorial</strong>
+      <p>Location-led portraits and editorial imagery with a strong visual mood.</p>
+    </a>
+
+    <a href="contact.html">
+      <span>04</span>
+      <strong>Video & Social</strong>
+      <p>Short-form video, reels and social-first content for creative projects and campaigns.</p>
+    </a>
+  </div>
+
+  <div class="services-cta">
+    <a class="text-link" href="contact.html">Discuss a project <span>→</span></a>
+  </div>
+</section>
+
+<section class="home-contact">
+  <span class="eyebrow">Guildford, Surrey · UK</span>
+  <h2>Have a project in mind?</h2>
+  <p>Available for commissions, collaborations, live events and creative content projects.</p>
+  <a class="outline-button" href="contact.html">Get in touch</a>
+</section>
+
 </main>
 
-<footer>
-  <span>© 2026 Michael Ralph Media</span>
-  <a href="https://www.instagram.com/michaelralphmedia" target="_blank" rel="noopener">@michaelralphmedia</a>
+<footer class="site-footer">
+  <div class="footer-brand"><img class="footer-mark" src="assets/brand/mrm-logo.webp" alt=""><span>© 2026 Michael Ralph Media</span></div>
+  <div>
+    <a href="mailto:michaelralphmedia@gmail.com">Email</a>
+    <a href="https://www.instagram.com/michaelralphmedia" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.linkedin.com/in/michael-r-9a0094326/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
 </footer>
 
+</div>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+  <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+  <button class="lightbox-prev" type="button" aria-label="Previous image">←</button>
+  <figure>
+    <img src="" alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button class="lightbox-next" type="button" aria-label="Next image">→</button>
 </div>
 <script src="script.js"></script>
 </body>

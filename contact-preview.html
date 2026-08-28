@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Michael Ralph Media — photographer, videographer and content creator based in Guildford, Surrey.">
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <title>Contact | Michael Ralph Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+  <style>
 
 :root{
   --paper:#f5f1e9;
@@ -939,49 +951,201 @@ img{display:block;width:100%;height:100%;object-fit:cover}
   .footer-mark{width:24px;height:24px}
 }
 
+</style>
+</head>
+<body>
+<div class="page">
 
-/* ABOUT PREVIEW — SMALLER PORTRAIT */
-.home-about{
-  grid-template-columns:.62fr 1.38fr;
-  min-height:470px;
-  align-items:center;
-}
-.home-about-image{
-  height:410px;
-  margin:30px 0 30px 42px;
-}
-.home-about-image img{
-  object-position:center 30%;
-}
-.home-about-copy{
-  padding:58px 62px;
-}
+<header class="site-header">
+  <a class="logo brand-lockup" href="index.html" aria-label="Michael Ralph Media home">
+    <img class="brand-mark" src="data:image/webp;base64,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" alt="" aria-hidden="true">
+    <span class="brand-name">Michael Ralph<small>Media</small></span>
+  </a>
 
-@media(max-width:980px){
-  .home-about{
-    grid-template-columns:.72fr 1.28fr;
-    min-height:440px;
-  }
-  .home-about-image{
-    height:380px;
-    margin:28px 0 28px 30px;
-  }
-  .home-about-copy{
-    padding:48px 38px;
-  }
-}
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
 
-@media(max-width:760px){
-  .home-about{
-    grid-template-columns:1fr;
-    min-height:0;
+  <nav id="site-nav" aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    
+      <div class="dropdown">
+        <button class="drop-toggle" type="button">Portfolio</button>
+        <div class="drop-menu">
+          <a href="portfolio.html">All Portfolio</a>
+          <a href="music.html">Music</a>
+          <a href="urban.html">Urban</a>
+          <a href="portraits.html">Portraits / Editorial</a>
+          <a href="landscape.html">Landscape</a>
+          <a href="analogue.html">Analogue</a>
+        </div>
+      </div>
+    <a href="about.html">About</a>
+    <a class="active" href="contact.html">Contact</a>
+    <div class="dropdown">
+      <button class="drop-toggle" type="button">Social Media</button>
+      <div class="drop-menu">
+        <a href="https://www.instagram.com/michaelralphmedia" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.linkedin.com/in/michael-r-9a0094326/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="contact-page compact-contact">
+  <div class="contact-page-heading">
+    <span class="eyebrow">Guildford, Surrey · UK</span>
+    <h1>Let's work together.</h1>
+    <p>For commissions, collaborations, live music, photography, videography or creative content projects, contact Michael directly.</p>
+    <a class="compact-services-link" href="index.html#services">View creative services →</a>
+  </div>
+
+  <div class="contact-list">
+    <a href="mailto:michaelralphmedia@gmail.com">
+      <span>Email</span>
+      <strong>michaelralphmedia@gmail.com</strong>
+      <i>→</i>
+    </a>
+    <a href="tel:+447555955234">
+      <span>Phone</span>
+      <strong>07555 955234</strong>
+      <i>→</i>
+    </a>
+    <a href="https://www.instagram.com/michaelralphmedia" target="_blank" rel="noopener">
+      <span>Instagram</span>
+      <strong>@michaelralphmedia</strong>
+      <i>↗</i>
+    </a>
+    <a href="https://www.linkedin.com/in/michael-r-9a0094326/" target="_blank" rel="noopener">
+      <span>LinkedIn</span>
+      <strong>Michael Ralph</strong>
+      <i>↗</i>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand"><img class="footer-mark" src="data:image/webp;base64,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" alt=""><span>© 2026 Michael Ralph Media</span></div>
+  <div>
+    <a href="mailto:michaelralphmedia@gmail.com">Email</a>
+    <a href="https://www.instagram.com/michaelralphmedia" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.linkedin.com/in/michael-r-9a0094326/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
+
+</div>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+  <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+  <button class="lightbox-prev" type="button" aria-label="Previous image">←</button>
+  <figure>
+    <img src="" alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button class="lightbox-next" type="button" aria-label="Next image">→</button>
+</div>
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdowns = document.querySelectorAll(".dropdown");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector("#site-nav");
+
+  if (menuToggle && nav) {
+    menuToggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(open));
+    });
   }
-  .home-about-image{
-    width:calc(100% - 48px);
-    height:470px;
-    margin:28px 24px 0;
+
+  dropdowns.forEach((dropdown) => {
+    const toggle = dropdown.querySelector(".drop-toggle");
+    if (!toggle) return;
+    toggle.setAttribute("aria-expanded", "false");
+
+    toggle.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      dropdowns.forEach((other) => {
+        if (other !== dropdown) {
+          other.classList.remove("open");
+          const otherToggle = other.querySelector(".drop-toggle");
+          if (otherToggle) otherToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      const isOpen = dropdown.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".dropdown")) {
+      dropdowns.forEach((dropdown) => {
+        dropdown.classList.remove("open");
+        const toggle = dropdown.querySelector(".drop-toggle");
+        if (toggle) toggle.setAttribute("aria-expanded", "false");
+      });
+    }
+  });
+
+  // Lightbox
+  const lightbox = document.querySelector("#lightbox");
+  const lbImage = lightbox?.querySelector("figure img");
+  const lbCaption = lightbox?.querySelector("figcaption");
+  const lbClose = lightbox?.querySelector(".lightbox-close");
+  const lbPrev = lightbox?.querySelector(".lightbox-prev");
+  const lbNext = lightbox?.querySelector(".lightbox-next");
+  const galleryItems = Array.from(document.querySelectorAll("[data-lightbox]"));
+  let current = -1;
+
+  function show(index) {
+    if (!lightbox || !galleryItems.length) return;
+    current = (index + galleryItems.length) % galleryItems.length;
+    const item = galleryItems[current];
+    lbImage.src = item.dataset.lightbox;
+    lbImage.alt = item.querySelector("img")?.alt || "";
+    lbCaption.textContent = item.dataset.caption || "";
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.classList.add("lightbox-open");
+    lbClose?.focus();
   }
-  .home-about-copy{
-    padding:42px 26px 50px;
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("lightbox-open");
   }
-}
+
+  galleryItems.forEach((item, index) => item.addEventListener("click", () => show(index)));
+  lbClose?.addEventListener("click", closeLightbox);
+  lbPrev?.addEventListener("click", () => show(current - 1));
+  lbNext?.addEventListener("click", () => show(current + 1));
+
+  lightbox?.addEventListener("click", (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeLightbox();
+      dropdowns.forEach((dropdown) => {
+        dropdown.classList.remove("open");
+        const toggle = dropdown.querySelector(".drop-toggle");
+        if (toggle) toggle.setAttribute("aria-expanded", "false");
+      });
+    }
+    if (lightbox?.classList.contains("open")) {
+      if (event.key === "ArrowLeft") show(current - 1);
+      if (event.key === "ArrowRight") show(current + 1);
+    }
+  });
+});
+
+</script>
+</body>
+</html>
