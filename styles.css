@@ -1819,3 +1819,31 @@ img{display:block;width:100%;height:100%;object-fit:cover}
   }
   .page:has(.compact-contact) .compact-contact{flex:1}
 }
+
+/* HOMEPAGE REFERENCE LAYOUT */
+@media (min-width:1100px){
+  .page:has(.hero){width:100%;margin:0;box-shadow:none}
+  .page:has(.hero) .site-header{min-height:72px;padding-inline:5.5vw}
+  .page:has(.hero) .hero{min-height:590px;display:block;padding:0;overflow:hidden}
+  .page:has(.hero) .hero-copy{position:absolute;left:7vw;top:50%;transform:translateY(-50%);max-width:470px;z-index:3}
+  .page:has(.hero) .hero h1{font-size:clamp(92px,10vw,142px)}
+  .page:has(.hero) .hero-image{position:absolute;inset:0 0 0 43%;width:auto;height:auto;margin:0}
+  .page:has(.hero) .hero-image::before{left:-22px;top:22px}
+  .page:has(.hero) .hero-image::after{bottom:24px}
+  .page:has(.hero) .portfolio-overview{padding:48px 5.5vw 54px}
+  .page:has(.hero) .section-heading{margin-bottom:24px}
+  .page:has(.hero) .portfolio-grid{grid-template-columns:repeat(5,1fr);gap:12px}
+  .page:has(.hero) .portfolio-card:nth-child(n){grid-column:auto;min-height:230px;margin:0}
+  .page:has(.hero) .portfolio-card-copy{left:15px;right:15px;bottom:15px}
+  .page:has(.hero) .portfolio-card-copy strong{font-size:28px}
+  .page:has(.hero) .home-about{grid-template-columns:1.1fr .9fr;min-height:420px}
+  .page:has(.hero) .home-about-image{order:2;height:auto;margin:0}
+  .page:has(.hero) .home-about-copy{order:1;padding:56px 7vw}
+  .page:has(.hero) .home-about-copy h2{font-size:58px}
+  .page:has(.hero) .services-strip{padding:52px 5.5vw 48px}
+  .page:has(.hero) .services-heading{grid-template-columns:1fr 1fr}
+  .page:has(.hero) .services-list{grid-template-columns:repeat(4,1fr)}
+  .page:has(.hero) .services-list a{min-height:170px;padding:22px 20px}
+  .page:has(.hero) .home-contact{padding:48px 5.5vw 54px;text-align:left}
+  .page:has(.hero) .home-contact h2{font-size:62px}
+}
