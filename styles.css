@@ -1728,7 +1728,12 @@ img{display:block;width:100%;height:100%;object-fit:cover}
     width:100%;
     margin:0;
     box-shadow:none;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
   }
+  .page > main{display:flex;flex:1;flex-direction:column}
+  .page > main > .compact-contact{height:auto;flex:1}
   .site-header{padding-inline:clamp(44px,6vw,96px)}
   .hero{padding-inline:clamp(44px,6vw,96px)}
   .hero-image{width:min(100%,560px);justify-self:end}
