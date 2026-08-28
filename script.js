@@ -11,6 +11,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const heroSlide = document.querySelector(".hero-slide");
+  if (heroSlide) {
+    const heroSlides = [
+      { src: "assets/images/a4704877.webp", alt: "Live band performance photographed by Michael Ralph Media" },
+      { src: "assets/images/a4701210.webp", alt: "Urban photography by Michael Ralph Media" },
+      { src: "assets/images/img-0140.webp", alt: "Portrait photography by Michael Ralph Media" },
+      { src: "assets/images/a4706498.webp", alt: "Landscape photography by Michael Ralph Media" },
+      { src: "assets/images/3.webp", alt: "Analogue photography by Michael Ralph Media" }
+    ];
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let heroIndex = 0;
+
+    heroSlides.forEach((slide) => {
+      const image = new Image();
+      image.src = slide.src;
+    });
+
+    if (!reducedMotion) {
+      window.setInterval(() => {
+        heroSlide.classList.add("is-fading");
+        window.setTimeout(() => {
+          heroIndex = (heroIndex + 1) % heroSlides.length;
+          heroSlide.src = heroSlides[heroIndex].src;
+          heroSlide.alt = heroSlides[heroIndex].alt;
+          heroSlide.classList.remove("is-fading");
+        }, 650);
+      }, 4500);
+    }
+  }
+
   dropdowns.forEach((dropdown) => {
     const toggle = dropdown.querySelector(".drop-toggle");
     if (!toggle) return;

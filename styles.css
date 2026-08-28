@@ -221,6 +221,11 @@ img{display:block;width:100%;height:100%;object-fit:cover}
   position:relative;
   z-index:1;
   object-position:center 34%;
+  transition:opacity .65s ease;
+}
+.hero-slide.is-fading{opacity:0}
+@media(prefers-reduced-motion:reduce){
+  .hero-image img{transition:none}
 }
 .hero-image::after{
   content:"LIVE / PORTRAIT / MOTION";
