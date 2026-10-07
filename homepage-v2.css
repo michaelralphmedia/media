@@ -355,9 +355,16 @@ body.home-v2{
 .home-v2 .photo-tile{
   position:relative;
   overflow:hidden;
+  display:block;
+  padding:0;
+  border:0;
+  background:#101010;
+  cursor:zoom-in;
 }
 
 .home-v2 .photo-tile img{
+  display:block;
+  object-fit:cover;
   transition:transform .45s ease;
 }
 
