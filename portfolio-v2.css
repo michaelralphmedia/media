@@ -1,0 +1,66 @@
+/* Live photo portfolio, aligned with the dark redesign. */
+body.portfolio-v2 {
+  --paper:#090909;
+  --paper-2:#111;
+  --outer:#090909;
+  --ink:#f4f1eb;
+  --muted:#aaa59f;
+  --line:rgba(255,255,255,.12);
+  --accent:#d66d48;
+  background:var(--outer);
+  color:var(--ink);
+}
+.portfolio-v2 .page {width:100%;margin:0;box-shadow:none;min-height:100svh;}
+.portfolio-v2 .site-header {min-height:82px;padding:0 4vw;background:#0a0a0a;border-color:var(--line);}
+.portfolio-v2 .brand-name {font-family:"Space Grotesk","DM Sans",Arial,sans-serif;font-size:21px;font-weight:600;line-height:1.2;letter-spacing:-.02em;}
+.portfolio-v2 .brand-mark {width:34px;height:34px;flex-basis:34px;}
+.portfolio-v2 .site-header nav {gap:24px;}
+.portfolio-v2 .site-header nav>a,.portfolio-v2 .drop-toggle {font-size:10px;letter-spacing:.16em;}
+.portfolio-v2 .drop-menu {background:#111;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.3);}
+.portfolio-v2 .drop-menu a:hover {background:#242424;}
+.portfolio-v2 .series-intro {padding:86px 4vw 64px;background:#101010;gap:28px;}
+.portfolio-v2 .series-number {font-family:"Space Grotesk","DM Sans",Arial,sans-serif;}
+.portfolio-v2 .series-intro h1 {font-family:"Space Grotesk","DM Sans",Arial,sans-serif;font-size:clamp(56px,7.5vw,108px);font-weight:600;line-height:.94;letter-spacing:-.05em;}
+.portfolio-v2 .series-intro p {font-size:15px;line-height:1.75;max-width:590px;}
+.portfolio-v2 .eyebrow {font-size:10px;letter-spacing:.22em;}
+.portfolio-v2 .gallery {padding:48px 4vw 64px;background:#0c0c0c;column-gap:18px;}
+.portfolio-v2 .gallery-item {border-radius:12px;background:#111;margin-bottom:18px;}
+.portfolio-v2 .featured-row {gap:18px;margin-bottom:18px;}
+.portfolio-v2 .featured-row .gallery-item {margin-bottom:0;}
+.portfolio-v2 .gallery-item img {transition:transform 180ms ease;}
+.portfolio-v2 .gallery-item:hover img {transform:scale(1.008);filter:none;}
+.portfolio-v2 .series-nav {padding:32px 4vw;background:#111;gap:16px;flex-wrap:wrap;align-items:center;}
+.portfolio-v2 .series-nav a {display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border:1px solid rgba(255,255,255,.3);border-radius:12px;font-size:10px;font-weight:600;line-height:1.4;letter-spacing:.1em;box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 2px 8px rgba(0,0,0,.12);transition:background-color 180ms ease,transform 180ms ease;}
+.portfolio-v2 .series-nav a:last-child {background:#d66d48;border-color:#d66d48;color:#090909;}
+.portfolio-v2 .series-nav a:hover {background:#242424;}
+.portfolio-v2 .series-nav a:last-child:hover {background:#e57a54;border-color:#e57a54;}
+.portfolio-v2 .site-footer {padding:26px 4vw 32px;background:#080808;color:#77726d;border-color:var(--line);font-size:9px;}
+.portfolio-v2 .lightbox button {min-width:44px;min-height:44px;border:1px solid rgba(255,255,255,.2);border-radius:12px;background:rgba(11,11,11,.8);}
+.portfolio-v2 a:focus-visible,.portfolio-v2 button:focus-visible {outline:2px solid #f4f1eb;outline-offset:4px;}
+@media (hover:hover) and (pointer:fine) {
+  .portfolio-v2 .series-nav a:hover {transform:translateY(-1px);}
+}
+@media (max-width:1099px) {
+  .portfolio-v2 .site-header nav {gap:16px;}
+  .portfolio-v2 .site-header nav>a,.portfolio-v2 .drop-toggle {font-size:9px;letter-spacing:.1em;}
+}
+@media (max-width:767px) {
+  .portfolio-v2 .site-header {min-height:72px;padding-inline:22px;}
+  .portfolio-v2 .brand-name {font-size:18px;}
+  .portfolio-v2 .brand-mark {width:29px;height:29px;flex-basis:29px;}
+  .portfolio-v2 .menu-toggle {border-color:var(--line);border-radius:12px;color:var(--ink);}
+  .portfolio-v2 .site-header nav {background:#0a0a0a;padding-inline:22px;border-color:var(--line);}
+  .portfolio-v2 .drop-menu {box-shadow:none;background:#111;}
+  .portfolio-v2 .series-intro {padding:60px 22px 42px;gap:14px;}
+  .portfolio-v2 .series-intro h1 {font-size:clamp(54px,14vw,76px);}
+  .portfolio-v2 .series-intro p {font-size:13px;}
+  .portfolio-v2 .gallery {padding:28px 22px 42px;columns:1;}
+  .portfolio-v2 .featured-row {gap:18px;}
+  .portfolio-v2 .series-nav {padding:28px 22px;}
+  .portfolio-v2 .site-footer {padding-inline:22px;}
+}
+@media (prefers-reduced-motion:reduce) {
+  .portfolio-v2 {scroll-behavior:auto;}
+  .portfolio-v2 .gallery-item img,.portfolio-v2 .series-nav a,.portfolio-v2 .lightbox,.portfolio-v2 .drop-menu {transition:none;}
+  .portfolio-v2 .gallery-item:hover img,.portfolio-v2 .series-nav a:hover {transform:none;}
+}
