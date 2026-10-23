@@ -40,7 +40,7 @@
 .selected-live-photos{display:flex;flex-direction:column;gap:24px}.selected-photo-row{display:flex;align-items:flex-start;gap:16px}.selected-photo{display:block;min-width:0}.selected-photo figure{margin:0}.selected-photo img{display:block;width:100%;height:auto;object-fit:contain;border-radius:3px}.selected-photo figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;padding-top:10px;font-size:11px;line-height:1.5;color:#a9aeaa}.selected-photo figcaption span:first-child{color:#efefed}.selected-photo:hover figcaption span:first-child{text-decoration:underline;text-underline-offset:4px}@media(max-width:600px){.selected-live-photos{gap:18px}.selected-photo-row{gap:8px}.selected-photo figcaption{font-size:10px;padding-top:7px;display:block}.selected-photo figcaption span{display:block}}
 
 /* Alabama 3 hero photograph fades into the page behind the copy. */
-.hero:before{background:#090a0a url("assets/images/shows/alabama-3-2026-10-22/DSC00497-2000.webp") no-repeat right 30%;background-size:auto 110%;filter:none}
+.hero:before{background:#090a0a url("assets/images/shows/alabama-3-2026-10-22/A7408738-2000.webp") no-repeat right 30%;background-size:auto 110%;filter:none}
 .hero:after{background:linear-gradient(90deg,#090a0a 0%,#090a0af5 28%,#090a0aa8 47%,#090a0a15 72%),linear-gradient(0deg,#090a0a 0%,#090a0a55 20%,transparent 52%),linear-gradient(180deg,#090a0a75,transparent 22%)}
 @media(max-width:800px){.hero:before{background-position:right top;background-size:auto 100%}.hero:after{background:linear-gradient(90deg,#090a0ac7 0%,#090a0a55 50%,#090a0a0d),linear-gradient(0deg,#090a0a 0%,#090a0aee 24%,#090a0a75 58%,#090a0a15 85%)}}
 @media(max-width:520px){.hero:before{background-size:auto 540px;background-position:75% top}.hero:after{background:linear-gradient(0deg,#090a0a 0%,#090a0af5 25%,#090a0aa6 48%,#090a0a15 79%),linear-gradient(90deg,#090a0a55,transparent 65%)}}
@@ -72,3 +72,7 @@
  footer{padding:22px 20px;gap:18px}footer div{gap:16px}.actions{flex-wrap:wrap}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Wider stage composition for the homepage hero. */
+.hero:before{width:85%;background-position:center 46%}
+@media(max-width:800px){.hero:before{width:100%;background-position:center 42%}}
