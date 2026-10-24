@@ -41,3 +41,7 @@
 @media(max-width:800px){.portfolio-collections{padding:28px 24px 36px}.portfolio-category-live{gap:24px;padding-right:24px}.portfolio-category{padding:22px}.portfolio-category-live{padding:0 24px 0 0}.portfolio-upcoming{gap:12px}.portfolio-category p{font-size:13px}}
 @media(max-width:520px){.portfolio-collections{padding:20px}.portfolio-category-live{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:16px;padding:16px}.portfolio-category h2{font-size:23px}.portfolio-category-live h2{font-size:22px}.category-copy{padding:0}.portfolio-category p{font-size:12px;margin-top:10px}.category-copy .text-link{font-size:8px;margin-top:12px;gap:10px}.portfolio-upcoming{grid-template-columns:1fr;gap:12px;margin-top:12px}.portfolio-upcoming .portfolio-category{padding:20px}.category-status{margin-top:14px}}
 
+/* Circular profile portrait beside the About introduction. */
+.about-profile-hero{grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);align-items:center}.about-profile{padding:48px 52px 48px 0;display:flex;justify-content:center}.about-profile img{display:block;width:min(100%,400px);height:auto;aspect-ratio:1;border-radius:50%;object-fit:cover}.about-profile-hero .about-intro{min-width:0}
+@media(max-width:800px){.about-profile-hero{grid-template-columns:minmax(0,1fr) minmax(180px,.6fr)}.about-profile{padding:32px 24px 32px 0}}
+@media(max-width:600px){.about-profile-hero{grid-template-columns:1fr}.about-profile{padding:0 20px 28px}.about-profile img{width:180px}}
