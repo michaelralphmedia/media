@@ -1,0 +1,18 @@
+/* Shared portfolio navigation, with native keyboard and touch support. */
+.portfolio-menu{position:relative}
+.portfolio-menu summary{display:flex;align-items:center;gap:6px;list-style:none;cursor:pointer;white-space:nowrap;min-height:40px}
+.portfolio-menu summary::-webkit-details-marker{display:none}
+.portfolio-menu summary span{font-size:14px;transition:transform .15s ease}
+.portfolio-menu[open] summary span{transform:rotate(180deg)}
+.portfolio-menu summary:focus-visible{outline:2px solid #fff;outline-offset:4px;border-radius:2px}
+.portfolio-menu-panel{position:absolute;top:calc(100% + 8px);right:0;z-index:20;min-width:190px;padding:8px;background:#111414;border:1px solid #424744;border-radius:6px;box-shadow:0 12px 30px #0008}
+.portfolio-menu-panel a{display:block;padding:14px 12px;font-size:11px;line-height:1.4;white-space:nowrap}
+.portfolio-menu-panel a:hover,.portfolio-menu-panel a:focus-visible{background:#252b28;color:#fff}
+.concept-nav{z-index:30}
+@media(max-width:600px){
+ .concept-nav,.concept-inner .concept-nav{height:auto;min-height:100px;flex-wrap:wrap;gap:6px;padding:12px 20px}
+ .concept-nav .brand-lockup{flex-basis:100%}
+ .concept-nav .brand-lockup span,.concept-inner .concept-nav .brand-lockup span{font-size:11px;max-width:none}
+ .concept-nav nav,.concept-inner .concept-nav nav{width:100%;justify-content:space-between;gap:16px;font-size:10px}
+ .portfolio-menu-panel{left:50%;right:auto;transform:translateX(-50%);min-width:180px}
+}
