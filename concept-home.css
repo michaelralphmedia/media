@@ -76,3 +76,7 @@
 /* Wider stage composition for the homepage hero. */
 .hero:before{width:85%;background-position:center 46%}
 @media(max-width:800px){.hero:before{width:100%;background-position:center 42%}}
+
+/* Footer navigation wraps comfortably as social links grow. */
+footer{flex-wrap:wrap}footer div{flex-wrap:wrap;min-width:0;row-gap:14px}footer div a{white-space:nowrap}
+@media(max-width:520px){footer div{flex-basis:100%;column-gap:18px;row-gap:14px}}
